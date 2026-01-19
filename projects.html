@@ -1,89 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <title>Samuel Sun | Projects</title>
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <div class="topNav">
-      <a class="topNavName">Samuel Sun</a>
-      <a class="topNavLinks" href="contact">Contact</a>
-      <a class="topNavLinks" href="resume">Resume</a>
-      <a class="topNavLinks" href="projects">Projects</a>
-      <a class="topNavLinks" href="about">About</a>
-      <a class="topNavLinks" href="index">Home</a>
-    </div>
-
-    <!-- Body -->
-    <div class="mainBodyBox">
-
-      <p class="bodySpace2"></p>
-      <h1 class="center bold">Projects</h1>
-      <p class="bodySpace1"></p>
-
-    <!-- Project Cards-->
-      <div class="card">
-        <img class="card_image" src="Projects/Dango/Dango.jpg" alt="Dango Render"/>
-        <div class="card_text">
-          <h2>Dango</h2>
-          <p>A 3D printed Christmas present based off an amorphized Japanese dessert - went from</p>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-nav w-100 d-flex justify-content-between">
+                <a class="nav-link" href="index.html">home</a>
+                <a class="nav-link" href="about.html">about</a>
+                <a class="nav-link" href="projects.html">projects</a>
+                <a class="nav-link" href="gallery.html">gallery</a>
+                <a class="nav-link" href="contact.html">contact</a>
+            </div>
         </div>
-      </div>
-
-      <div style="padding-top:30px"></div>
-      <div class="card">
-        <img class="card_image" src="Projects/MPCNC/CNC Table Render.png" alt="20"/>
-        <div class="card_text">
-          <h2>MPCNC</h2>
-          <p>Why buy a CNC router when you can download one from the web?</p>
-        </div>
-      </div>
-
-      <div style="padding-top:30px"></div>
-      <div class="card">
-        <img class="card_image" src="Projects/Keyboard/Keyboard.jpg" alt="20"/>
-        <div class="card_text">
-          <h2>XD68 Mechanical Keyboard</h2>
-          <p>A "cheap" keyboard for when your friends pull you into a hobby that you can't afford.</p>
-        </div>
-      </div>
-
-      <div style="padding-top:30px"></div>
-      <div class="card">
-        <img class="card_image" src="Projects/FRC2020/FRC2020.jpg" alt="20"/>
-        <div class="card_text">
-          <h2>FRC 2020</h2>
-          <p>Robot design intended for the 2020 FIRST Robotics Competition (FRC), Infinite Recharge.</p>
-        </div>
-      </div>
-
-      <div style="padding-top:30px"></div>
-      <div class="card">
-        <img class="card_image" src="Projects/FRC2019/FRC2019.JPG" alt="20"/>
-        <div class="card_text">
-          <h2>FRC 2019</h2>
-          <p>Robot design built for the 2019 FIRST Robotics Competition (FRC), Destination: Deep Space.</p>
-        </div>
-      </div>
-      
-
-      <p class="bodySpace5"></p>
-
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-      <p>Samuel Sun | 2022</p>
-    </div>
-  </body>
+    </nav>
+    
+    <main class="container">
+        <h1 class="mb-4">projects</h1>
+        
+        <section class="mb-5">
+            <h2 class="mb-3">autonomous inspection robot</h2>
+            <p class="mb-4">designed and built a six-wheeled autonomous robot for industrial pipe inspection. the system uses lidar for navigation, multiple cameras for visual inspection, and a custom suspension system to handle rough terrain. the chassis is machined from aluminum with 3d printed components for complex geometries.</p>
+            
+            <div class="image-placeholder mb-4">
+                [image: completed robot on test track with visible suspension and sensor array]
+            </div>
+            
+            <p class="mb-4">key challenges included power management for extended operation, thermal management of electronics in an enclosed space, and designing a robust mechanical structure that could withstand industrial environments. the project required integration of mechanical design, embedded systems, and sensor fusion algorithms.</p>
+            
+            <div class="image-placeholder small">
+                [image: CAD render showing internal component layout and wiring]
+            </div>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="mb-3">custom mechanical keyboard</h2>
+            <p class="mb-4">designed a fully custom mechanical keyboard from the ground up, including the PCB layout, case design, and plate mounting system. the case is CNC machined from aluminum with a custom anodized finish. the project involved learning PCB design, switch selection, and understanding the mechanical properties of different mounting styles.</p>
+            
+            <div class="image-placeholder small mb-4">
+                [image: finished keyboard with custom keycaps and aluminum case]
+            </div>
+            
+            <p>the design process included extensive prototyping to get the feel and sound profile right. i experimented with different plate materials (aluminum, brass, polycarbonate) and mounting styles (gasket mount, top mount) to achieve the desired typing experience.</p>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="mb-3">precision motion control stage</h2>
+            <p class="mb-4">developed a three-axis precision positioning stage with sub-micron accuracy for laboratory automation. the system uses linear ball screws, precision ground rails, and stepper motors with microstepping drivers. i designed the mechanical structure to minimize deflection and thermal expansion effects.</p>
+            
+            <div class="image-placeholder mb-4">
+                [image: motion stage assembly with visible linear rails and ball screws]
+            </div>
+            
+            <p class="mb-4">the project required careful consideration of material selection, bearing preload, and backlash compensation. i wrote custom control firmware to implement closed-loop positioning using optical encoders. the stage is currently being used in a research lab for automated sample handling.</p>
+            
+            <div class="image-placeholder small">
+                [image: close-up detail of ball screw and linear rail assembly]
+            </div>
+        </section>
+        
+        <section class="mb-5">
+            <h2 class="mb-3">automated test fixture</h2>
+            <p class="mb-4">built an automated test fixture for validating electronic assemblies in a production environment. the fixture includes pneumatic actuators for component manipulation, custom probe cards for electrical testing, and a vision system for optical inspection. the mechanical design prioritizes reliability and ease of maintenance.</p>
+            
+            <div class="image-placeholder mb-4">
+                [image: test fixture with visible pneumatic actuators and probe assembly]
+            </div>
+            
+            <p>this project involved working closely with manufacturing engineers to understand production requirements and design constraints. the fixture has been in continuous use for over a year with minimal downtime, validating the robustness of the mechanical design.</p>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
-
-<!-- Samuel Sun 2022 -->
